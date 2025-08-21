@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+<nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <span>Tanvir</span>
@@ -23,10 +22,17 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="dropdown">
+                    <span class="nav-link dropdown-toggle">More <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#accomplishments">Accomplishments</a></li>
+                        <li><a href="#hobby">Hobbies</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="nav-toggle">
                 <span class="bar"></span>
@@ -41,7 +47,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Tanvir Hasan</span>
+                    Hola, I'm <span>Tanvir Hasan</span>
                 </h1>
                 <p class="hero-subtitle">Software Engineer</p>
                 <p class="hero-description">
@@ -54,8 +60,8 @@
                 </div>
             </div>
             <div class="profile-img-container">
-              <img src="assets/img/tanvir.jpeg" alt="Tanvir Hasan" class="profile-img">
-              </div>
+                <img src="assets/img/tanvir.jpeg" alt="Tanvir Hasan" class="profile-img">
+            </div>
         </div>
     </section>
 
@@ -84,79 +90,11 @@
                             <h3>2+</h3>
                             <p>Years Experience</p>
                         </div>
-                        <!-- <div class="stat">
-                            <h3>GRE</h3>
-                            <p>Q:161 | V:138</p>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <div class="resume-section">
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>Education</h3>
-                        </div>
-                        <div class="resume-details">
-                            <h4>B.Sc. in Computer Science & Engineering</h4>
-                            <span class="resume-date">2017 - 2022</span>
-                            <p class="resume-institution">Chittagong University of Engineering & Technology (CUET)</p>
-                            <!-- <p class="resume-gpa">CGPA: 2.90/4.0</p> -->
-                            <p class="resume-thesis"><strong>Academic Thesis:</strong> A Comparative Study of Machine Learning and Deep Learning Models for EEG-Based Seizure Detection</p>
-                            <br>
-                            <h4>Higher Secondary School Certificate </h4>
-                            <span class="resume-date">2014-2016</span>
-                            <p class="resume-institution">Sonar Bnagla College & University</p>
-                            <p class="resume-gpa">GPA: 5.0/5.0</p>
-                            <!-- <p class="resume-gpa">Government Scholarship</p> -->
-                            <br>
-                            <h4> Secondary School Certificate </h4>
-                            <span class="resume-date">2009-2014</span>
-                            <p class="resume-institution">Nimsar High School</p>
-                            <p class="resume-gpa">GPA: 5.0/5.0</p>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
                         </div>
                     </div>
-
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>Professional Experience</h3>
-                        </div>
-                        <div class="resume-details">
-                            <h4>Software Engineer</h4>
-                            <span class="resume-date">Apr 2023 - Present</span>
-                            <p class="resume-institution">Telcobright Ltd.</p>
-                            <ul class="resume-achievements">
-                                <li>Designed and developed a fault-tolerant distributed stream processing system from the ground up</li>
-                                <li>Implemented exactly-once processing semantics for critical data pipelines using Apache Flink and Kafka</li>
-                                <li>Built microservices-based backend with Java and Spring Boot, REST APIs, JPA/Hibernate, gRPC</li>
-                                <li>Implemented security, authentication, and API routing patterns using Spring Security and Gateway</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>Certifications</h3>
-                        </div>
-                        <div class="resume-details">
-                            <h4>Machine Learning Specialization</h4>
-                            <p class="resume-institution">Stanford University Online by Andrew Ng (Coursera)</p>
-                            <p>Gained hands-on experience in supervised/unsupervised learning and applied core ML concepts</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="resume-download">
-                    <a href="#" class="btn btn-primary" onclick="alert('Add your CV PDF link here!')">
-                        <i class="fas fa-download"></i> Download Full CV
-                    </a>
                 </div>
             </div>
         </div>
@@ -205,6 +143,72 @@
         </div>
     </section>
 
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="resume-content">
+                <div class="resume-item">
+                    <div class="resume-header">
+                        <h3>Professional Experience</h3>
+                    </div>
+                    <div class="resume-details">
+                        <h4>Software Engineer</h4>
+                        <span class="resume-date">Apr 2023 - Present</span>
+                        <p class="resume-institution">Telcobright Ltd.</p>
+                        <ul class="resume-achievements">
+                            <li>Designed and developed a fault-tolerant distributed stream processing system from the ground up</li>
+                            <li>Implemented exactly-once processing semantics for critical data pipelines using Apache Flink and Kafka</li>
+                            <li>Built microservices-based backend with Java and Spring Boot, REST APIs, JPA/Hibernate, gRPC</li>
+                            <li>Implemented security, authentication, and API routing patterns using Spring Security and Gateway</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-download">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Full CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="resume">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="resume-content">
+                <div class="resume-item">
+                    <div class="resume-details">
+                        <h4>B.Sc. in Computer Science & Engineering</h4>
+                        <span class="resume-date">2017 - 2022</span>
+                        <p class="resume-institution">Chittagong University of Engineering & Technology (CUET)</p>
+                        <p class="resume-thesis"><strong>Academic Thesis:</strong> A Comparative Study of Machine Learning and Deep Learning Models for EEG-Based Seizure Detection</p>
+                    </div>
+                </div>
+
+                <div class="resume-item">
+                    <div class="resume-details">
+                        <h4>Higher Secondary School Certificate</h4>
+                        <span class="resume-date">2014-2016</span>
+                        <p class="resume-institution">Sonar Bangla College & University</p>
+                        <p class="resume-gpa">GPA: 5.0/5.0</p>
+                    </div>
+                </div>
+
+                <div class="resume-item">
+                    <div class="resume-details">
+                        <h4>Secondary School Certificate</h4>
+                        <span class="resume-date">2009-2014</span>
+                        <p class="resume-institution">Nimsar High School</p>
+                        <p class="resume-gpa">GPA: 5.0/5.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -212,7 +216,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Real-Time+Messaging" alt="Real-Time Messaging System">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Real-Time Messaging System">
                         <div class="project-overlay">
                             <a href="https://github.com/mississippii/Gorib-er-Messenger" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/mississippii/Gorib-er-Messenger" class="project-link"><i class="fab fa-github"></i></a>
@@ -231,7 +235,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Microservices" alt="Microservices Architecture">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Microservices Architecture">
                         <div class="project-overlay">
                             <a href="https://github.com/mississippii/microserviceArchitecture" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/mississippii/microserviceArchitecture" class="project-link"><i class="fab fa-github"></i></a>
@@ -250,10 +254,9 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=React+Website" alt="Consultancy Website">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1715&q=80" alt="Consultancy Website">
                         <div class="project-overlay">
                             <a href="http://www.simclbd.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="http://www.simclbd.com/" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -266,76 +269,40 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/34d399/ffffff?text=EEG+ML" alt="EEG Seizure Detection">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="resume">
+        <div class="container">
+            <h2 class="section-title">Accomplishments</h2>
+            <div class="resume-content">
+                <div class="resume-item">
+                    <div class="resume-header">
+                        <h3>Certifications</h3>
                     </div>
-                    <div class="project-content">
-                        <h3>EEG-Based Seizure Detection</h3>
-                        <p>Academic thesis project comparing ML and Deep Learning models for EEG seizure detection with high accuracy</p>
-                        <div class="project-tech">
-                            <span>CNN</span>
-                            <span>RNN/LSTM</span>
-                            <span>Python</span>
-                        </div>
+                    <div class="resume-details">
+                        <h4>Machine Learning Specialization</h4>
+                        <p class="resume-institution">Stanford University Online by Andrew Ng (Coursera)</p>
+                        <p>Gained hands-on experience in supervised/unsupervised learning and applied core ML concepts</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Hobbies Section -->
+    <section id="hobby" class="about">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>u1604090@student.cuet.ac.bd</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+880 1932 590 638</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/mississippii" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hasantanvir/" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com/hasantanvir313" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.facebook.com/godfather.cf" class="social-link">
-                        <i class="fab fa-facebook"></i>
-                    </a>
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        When I'm not coding, I enjoy exploring new technologies, reading research papers on distributed systems, 
+                        and contributing to open-source projects. I'm also passionate about photography and hiking, which helps me 
+                        maintain a creative perspective in my technical work.
+                    </p>
                 </div>
             </div>
         </div>
@@ -343,11 +310,45 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Social Link</h4>
+                <div class="footer-social">
+                    <a href="https://github.com/mississippii"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hasantanvir/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/hasantanvir313"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#resume">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li> -->
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fas fa-envelope"></i> u1604090@student.cuet.ac.bd</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
             <p>&copy; 2024 Tanvir Hasan. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
