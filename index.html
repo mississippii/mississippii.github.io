@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="./">
     <title>Tanvir Hasan - Software Engineer</title>
     <meta name="description" content="Software Engineer specializing in web development and modern technologies">
-    
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="manifest" href="manifest.json">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<nav class="navbar">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <span>Tanvir</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -34,7 +38,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="nav-toggle">
+            <div class="nav-toggle" id="navToggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -62,6 +66,10 @@
             <div class="profile-img-container">
                 <img src="assets/img/tanvir.jpeg" alt="Tanvir Hasan" class="profile-img">
             </div>
+        </div>
+        <div class="hero-scroll-indicator" id="scrollIndicator">
+            <i class="fas fa-chevron-down"></i>
+            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -178,18 +186,18 @@
     <section id="education" class="resume">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="resume-content">
-                <div class="resume-item">
-                    <div class="resume-details">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h4>B.Sc. in Computer Science & Engineering</h4>
                         <span class="resume-date">2017 - 2022</span>
                         <p class="resume-institution">Chittagong University of Engineering & Technology (CUET)</p>
-                        <p class="resume-thesis"><strong>Academic Thesis:</strong> A Comparative Study of Machine Learning and Deep Learning Models for EEG-Based Seizure Detection</p>
+                        <!-- <p class="resume-thesis"><strong>Academic Thesis:</strong> A Comparative Study of Machine Learning and Deep Learning Models for EEG-Based Seizure Detection</p> -->
                     </div>
                 </div>
 
-                <div class="resume-item">
-                    <div class="resume-details">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h4>Higher Secondary School Certificate</h4>
                         <span class="resume-date">2014-2016</span>
                         <p class="resume-institution">Sonar Bangla College & University</p>
@@ -197,8 +205,8 @@
                     </div>
                 </div>
 
-                <div class="resume-item">
-                    <div class="resume-details">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h4>Secondary School Certificate</h4>
                         <span class="resume-date">2009-2014</span>
                         <p class="resume-institution">Nimsar High School</p>
@@ -286,6 +294,10 @@
                         <h4>Machine Learning Specialization</h4>
                         <p class="resume-institution">Stanford University Online by Andrew Ng (Coursera)</p>
                         <p>Gained hands-on experience in supervised/unsupervised learning and applied core ML concepts</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/WKCWRL76HVV7" target="_blank" rel="noopener" class="coursera-badge-link">
+                            <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" class="coursera-badge-logo">
+                            <span>Verified Certificate</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -293,16 +305,74 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section id="hobby" class="about">
+    <section id="hobby" class="hobbies">
         <div class="container">
             <h2 class="section-title">Hobbies & Interests</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        When I'm not coding, I enjoy exploring new technologies, reading research papers on distributed systems, 
-                        and contributing to open-source projects. I'm also passionate about photography and hiking, which helps me 
-                        maintain a creative perspective in my technical work.
-                    </p>
+            <p class="hobbies-intro">
+                When I'm not coding, I enjoy exploring new technologies, reading research papers on distributed systems, 
+                and contributing to open-source projects. I'm also passionate about drawing and sketching, which helps me 
+                maintain a creative perspective in my technical work.
+            </p>
+            <div class="hobbies-gallery">
+                <div class="hobby-item">
+                    <img src="assets/img/che.jpg" alt="Portrait Sketch" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Portrait Sketch</h3>
+                        <p class="hobby-desc">Charcoal on paper</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="assets/img/night.jpg" alt="Landscape Drawing" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Landscape Drawing</h3>
+                        <p class="hobby-desc">Pencil sketch</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="assets/img/merylin.jpg" alt="Abstract Art" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Abstract Art</h3>
+                        <p class="hobby-desc">Mixed media</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="assets/img/moheen.jpg" alt="Technical Drawing" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Technical Drawing</h3>
+                        <p class="hobby-desc">Ink on paper</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="assets/img/devsisu.jpg" alt="Character Design" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Character Design</h3>
+                        <p class="hobby-desc">Digital art</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <img src="assets/img/cheplin.jpg" alt="Nature Sketch" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <h3 class="hobby-title">Nature Sketch</h3>
+                        <p class="hobby-desc">Watercolor and ink</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close" id="lightbox-close">&times;</span>
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+                <div class="lightbox-nav">
+                    <div class="lightbox-button" id="lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="lightbox-button" id="lightbox-next"><i class="fas fa-chevron-right"></i></div>
                 </div>
             </div>
         </div>
@@ -319,18 +389,16 @@
                     <a href="https://twitter.com/hasantanvir313"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <!-- <li><a href="#resume">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li> -->
                 </ul>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Contact Info</h4>
                 <ul class="footer-contact-info">
@@ -339,7 +407,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2024 Tanvir Hasan. All rights reserved.</p>
         </div>
@@ -349,6 +417,7 @@
     <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </a>
+
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
