@@ -83,12 +83,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Scroll indicator click handler
     const scrollIndicator = document.getElementById('scrollIndicator');
-    scrollIndicator.addEventListener('click', () => {
-        window.scrollTo({
-            top: window.innerHeight,
-            behavior: 'smooth'
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', () => {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 
     // Lightbox functionality
     const lightbox = document.getElementById('lightbox');
@@ -170,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.timeline-item, .hobby-item').forEach(item => {
+    document.querySelectorAll('.timeline-item, .hobby-item, .capability-block, .dossier').forEach(item => {
         observer.observe(item);
     });
 });

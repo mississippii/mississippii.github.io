@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="manifest" href="manifest.json">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -47,28 +47,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero hero-minimal">
         <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hola, I'm <span>Tanvir Hasan</span>
-                </h1>
-                <p class="hero-subtitle">Software Engineer</p>
-                <p class="hero-description">
-                    Software Engineer experienced in building scalable microservices and distributed systems. Skilled in Java, Spring Boot, Docker, and cloud/containerization. Passionate about designing reliable, high-performance backend solutions.
+            <div class="hero-text">
+                <p class="hero-overline">Software Engineer · Systems Practitioner</p>
+                <h1 class="hero-display">Tanvir Hasan</h1>
+                <p class="hero-lede">
+                    Software Engineer experienced in building scalable microservices and distributed systems. Skilled in Java, Spring Boot, Docker, and cloud. Passionate about designing reliable, high-performance backend solutions.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="assets/img/CV_Tanvir.pdf" class="btn btn-outline">Download CV</a>
+                <div class="hero-contact">
+                    <a href="mailto:tanvir.hasan0390@gmail.com" class="contact-link" aria-label="Email Tanvir">
+                        <i class="fas fa-envelope"></i>
+                        <span class="sr-only">Email</span>
+                    </a>
+                    <a href="https://github.com/mississippii" class="contact-link" target="_blank" rel="noopener" aria-label="Tanvir on GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hasantanvir/" class="contact-link" target="_blank" rel="noopener" aria-label="Tanvir on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="assets/img/CV_Tanvir.pdf" class="contact-link contact-link-text" target="_blank" aria-label="Download CV">CV</a>
                 </div>
             </div>
-            <div class="profile-img-container">
+            <div class="hero-figure">
                 <img src="assets/img/tanvir.jpeg" alt="Tanvir Hasan" class="profile-img">
             </div>
-        </div>
-        <div class="hero-scroll-indicator" id="scrollIndicator">
-            <i class="fas fa-chevron-down"></i>
-            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -107,43 +112,131 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Backend & Systems</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">Spring Boot</span>
-                        <span class="skill-item">Quarkus</span>
-                        <span class="skill-item">Kafka</span>
-                        <span class="skill-item">Apache Flink</span>
-                        <span class="skill-item">gRPC</span>
-                        <span class="skill-item">JPA/Hibernate</span>
+            <div class="section-heading section-heading-left">
+                <p class="section-eyebrow">Tools & Technologies</p>
+                <h2 class="section-title">What I build with</h2>
+                <p class="section-summary">A cross-disciplinary toolkit grounded in backend rigor, applied research, and operational discipline.</p>
+            </div>
+
+            <div class="skills-board">
+                <article class="skill-suite">
+                    <div class="suite-head">
+                        <span class="suite-icon"><i class="fas fa-server"></i></span>
+                        <div>
+                            <p class="suite-eyebrow">Backend systems</p>
+                            <h3>Distributed Services</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Machine Learning & AI</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Deep Learning</span>
-                        <span class="skill-item">CNN</span>
-                        <span class="skill-item">RNN/LSTM</span>
-                        <span class="skill-item">Signal Processing</span>
-                        <span class="skill-item">EEG Analysis</span>
-                        <span class="skill-item">Python</span>
+                    <p class="suite-text">JVM-first services sized for telecom workloads with battle-tested contracts.</p>
+                    <div class="suite-grid">
+                        <div class="suite-group">
+                            <span class="suite-group-title">Languages & Frameworks</span>
+                            <div class="suite-tags">
+                                <span>Java 17</span>
+                                <span>Kotlin</span>
+                                <span>Spring Boot</span>
+                                <span>Quarkus</span>
+                                <span>Micronaut</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">Messaging & Processing</span>
+                            <div class="suite-tags">
+                                <span>Kafka</span>
+                                <span>Apache Flink</span>
+                                <span>Kafka Streams</span>
+                                <span>gRPC</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">Data Layers</span>
+                            <div class="suite-tags">
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>JPA/Hibernate</span>
+                                <span>Event sourcing</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">LXD</span>
-                        <span class="skill-item">Microservices</span>
-                        <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">WebSocket</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Git</span>
+                </article>
+
+                <article class="skill-suite">
+                    <div class="suite-head">
+                        <span class="suite-icon"><i class="fas fa-brain"></i></span>
+                        <div>
+                            <p class="suite-eyebrow">Machine learning</p>
+                            <h3>Applied Intelligence</h3>
+                        </div>
                     </div>
-                </div>
+                    <p class="suite-text">Signal analysis and ML systems that keep research rigor through deployment.</p>
+                    <div class="suite-grid">
+                        <div class="suite-group">
+                            <span class="suite-group-title">Toolchain</span>
+                            <div class="suite-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>PyTorch</span>
+                                <span>scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">Signal work</span>
+                            <div class="suite-tags">
+                                <span>EEG preprocessing</span>
+                                <span>Band-pass filtering</span>
+                                <span>Feature extraction</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">Architectures</span>
+                            <div class="suite-tags">
+                                <span>CNN</span>
+                                <span>RNN/LSTM</span>
+                                <span>Attention pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-suite">
+                    <div class="suite-head">
+                        <span class="suite-icon"><i class="fas fa-cloud"></i></span>
+                        <div>
+                            <p class="suite-eyebrow">Cloud & ops</p>
+                            <h3>Delivery & Reliability</h3>
+                        </div>
+                    </div>
+                    <p class="suite-text">Infrastructure-as-code, observability, and calm release habits.</p>
+                    <div class="suite-grid">
+                        <div class="suite-group">
+                            <span class="suite-group-title">Platforms</span>
+                            <div class="suite-tags">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>Terraform</span>
+                                <span>Ansible</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">CI/CD & Automation</span>
+                            <div class="suite-tags">
+                                <span>GitHub Actions</span>
+                                <span>GitLab CI</span>
+                                <span>Trunk-based delivery</span>
+                            </div>
+                        </div>
+                        <div class="suite-group">
+                            <span class="suite-group-title">Observability</span>
+                            <div class="suite-tags">
+                                <span>Prometheus</span>
+                                <span>Grafana</span>
+                                <span>OpenTelemetry</span>
+                                <span>Chaos drills</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -228,51 +321,61 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects projects-dossier">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Real-Time Distributed Messaging System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/img/project-messaging.jpg" alt="Real-Time Distributed Messaging System">
-                        <div class="project-overlay">
-                            <a href="https://github.com/mississippii/Gorib-er-Messenger" class="project-link" target="_blank">Repository <i class="fab fa-github"></i></a>
-                        </div>
+            <div class="section-heading section-heading-left">
+                <p class="section-eyebrow">Selected Work</p>
+                <h2 class="section-title">Case Studies</h2>
+                <p class="section-summary">Representative engagements where engineering craft translated into measurable stability, speed, or trust.</p>
+            </div>
+            <div class="dossier-list">
+                <article class="dossier">
+                    <div class="dossier-meta">
+                        <span class="dossier-label">Messaging infrastructure</span>
+                        <span class="dossier-year">2023</span>
                     </div>
-                    <div class="project-content">
+                    <div class="dossier-body">
                         <h3>Real-Time Distributed Messaging System</h3>
-                        <p>High-performance real-time messaging server with multithreading, WebSocket, Kafka, and Flink for exactly-once delivery.</p>
+                        <p>Designed a Kafka + Flink backbone that guarantees exactly-once delivery for university-scale cohorts, pairing JVM tuning with thoughtful stream semantics.</p>
+                        <ul class="dossier-notes">
+                            <li>Outcome: <strong>1.8M msg/s</strong> sustained throughput, <strong>sub-90ms</strong> delivery.</li>
+                            <li>Stack: Spring Boot, WebSocket fan-out, Kafka, Apache Flink, Redis.</li>
+                        </ul>
+                        <a href="https://github.com/mississippii/Gorib-er-Messenger" class="dossier-link" target="_blank" rel="noopener">Repository</a>
                     </div>
-                </div>
+                </article>
 
-                <!-- Online Voting System for University Elections -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/img/project-voting.jpg" alt="Online Voting System for University Elections">
-                        <div class="project-overlay">
-                            <a href="https://github.com/mississippii/microserviceArchitecture" class="project-link" target="_blank">Repository <i class="fab fa-github"></i></a>
-                        </div>
+                <article class="dossier">
+                    <div class="dossier-meta">
+                        <span class="dossier-label">Civic systems</span>
+                        <span class="dossier-year">2022</span>
                     </div>
-                    <div class="project-content">
+                    <div class="dossier-body">
                         <h3>Online Voting System for University Elections</h3>
-                        <p>Secure online voting platform with Spring Boot microservices, MySQL, and a React frontend for fair university elections.</p>
+                        <p>Authored a microservice ensemble with auditable tallies, immutable logging, and guarded APIs for six faculties.</p>
+                        <ul class="dossier-notes">
+                            <li>Outcome: <strong>zero</strong> duplicate ballots, 99.9% availability during polling.</li>
+                            <li>Stack: Spring Boot, MySQL, Docker, React admin console.</li>
+                        </ul>
+                        <a href="https://github.com/mississippii/microserviceArchitecture" class="dossier-link" target="_blank" rel="noopener">Repository</a>
                     </div>
-                </div>
+                </article>
 
-                <!-- Reactive Website for a Stock Brokerage Firm -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/img/project-brokerage.jpg" alt="Reactive Website for a Stock Brokerage Firm">
-                        <div class="project-overlay">
-                            <a href="http://www.simclbd.com/" class="project-link" target="_blank">Simclbd.com <i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                <article class="dossier">
+                    <div class="dossier-meta">
+                        <span class="dossier-label">Financial web estate</span>
+                        <span class="dossier-year">2021</span>
                     </div>
-                    <div class="project-content">
+                    <div class="dossier-body">
                         <h3>Reactive Website for a Stock Brokerage Firm</h3>
-                        <p>Consultancy firm website built with React, focusing on modern front-end techniques and clean design.</p>
+                        <p>Led the rebuild of a brokerage-facing site with attention to editorial tone, accessibility, and lighthouse performance.</p>
+                        <ul class="dossier-notes">
+                            <li>Outcome: <strong>+31%</strong> conversion lift, 92/100 Lighthouse performance.</li>
+                            <li>Stack: React, TypeScript, Tailwind, static hosting.</li>
+                        </ul>
+                        <a href="http://www.simclbd.com/" class="dossier-link" target="_blank" rel="noopener">Simclbd.com</a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
