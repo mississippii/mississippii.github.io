@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/navbar-skills-improvements.css">
+    <link rel="stylesheet" href="assets/css/refinements.css">
 </head>
 <body>
     <!-- Scroll Progress Indicator -->
@@ -133,19 +133,20 @@
                         <div class="suite-group">
                             <span class="suite-group-title">Languages & Frameworks</span>
                             <div class="suite-tags">
-                                <span>Java</span>
-                                <span>C/C++</span>
+                                <span>Java 17</span>
+                                <span>Kotlin</span>
                                 <span>Spring Boot</span>
                                 <span>Quarkus</span>
+                                <span>Micronaut</span>
                             </div>
                         </div>
                         <div class="suite-group">
-                            <span class="suite-group-title">Messaging & Protocols</span>
+                            <span class="suite-group-title">Messaging & Processing</span>
                             <div class="suite-tags">
                                 <span>Kafka</span>
                                 <span>Apache Flink</span>
+                                <span>Kafka Streams</span>
                                 <span>gRPC</span>
-                                <span>REST</span>
                                 <span>WebSocket</span>
                             </div>
                         </div>
@@ -213,7 +214,7 @@
                             <span class="suite-group-title">Platforms</span>
                             <div class="suite-tags">
                                 <span>Docker</span>
-                                <span>LXD</span>
+                                <span>Kubernetes</span>
                                 <span>Terraform</span>
                                 <span>Ansible</span>
                             </div>
@@ -223,14 +224,16 @@
                             <div class="suite-tags">
                                 <span>GitHub Actions</span>
                                 <span>GitLab CI</span>
+                                <span>Trunk-based delivery</span>
                             </div>
                         </div>
                         <div class="suite-group">
                             <span class="suite-group-title">Observability</span>
                             <div class="suite-tags">
                                 <span>Prometheus</span>
-                                <span>Loki</span>
-                                <span>ELK</span>
+                                <span>Grafana</span>
+                                <span>OpenTelemetry</span>
+                                <span>Chaos drills</span>
                             </div>
                         </div>
                     </div>
