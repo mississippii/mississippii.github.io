@@ -243,7 +243,7 @@ html {
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -262,6 +262,16 @@ h1, h2, h3, h4 {
     font-weight: 600;
     font-family: 'Playfair Display', serif;
     color: var(--primary-color);
+}
+
+.nav-menu a,
+.nav-logo span,
+.section-title,
+.hero-display,
+.suite-head h3,
+.suite-eyebrow,
+.footer-col h4 {
+    font-family: 'Playfair Display', serif;
 }
 
 .section-title {
@@ -532,8 +542,8 @@ h1, h2, h3, h4 {
 .hero-overline {
     text-transform: uppercase;
     letter-spacing: 0.35em;
-    font-size: 0.75rem;
-    color: var(--text-light);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
@@ -608,10 +618,10 @@ h1, h2, h3, h4 {
 
 .profile-img {
     width: 100%;
-    max-width: 360px;
-    border-radius: 18px;
+    max-width: 260px;
+    border-radius: 0;
     object-fit: cover;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
 .hero-minimal .hero-container {
@@ -753,6 +763,18 @@ h1, h2, h3, h4 {
     font-size: 0.8rem;
     font-weight: 500;
     float: right;
+}
+
+.timeline-content {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.timeline .resume-date {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    float: none;
 }
 
 .resume-institution {
@@ -1336,6 +1358,28 @@ h1, h2, h3, h4 {
     margin-top: 0.2rem;
 }
 
+.mail-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.mail-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(245,247,251,0.55);
+}
+
+.mail-block a {
+    color: #f5f7fb;
+    text-decoration: none;
+}
+
+.mail-block a:hover {
+    text-decoration: underline;
+}
+
 .footer-social {
     display: flex;
     gap: 1rem;
@@ -1471,7 +1515,7 @@ h1, h2, h3, h4 {
     }
 
     .profile-img {
-        max-width: 320px;
+        max-width: 220px;
         margin: 0 auto;
     }
 
