@@ -403,72 +403,110 @@
     <!-- Hobbies Section -->
     <section id="hobby" class="hobbies">
         <div class="container">
-            <h2 class="section-title">Hobbies</h2>
-            <p class="hobbies-intro">
-                When I'm not coding, I enjoy exploring new technologies, reading books, 
-                and contributing to open-source projects. I'm also passionate about drawing and sketching, which helps me 
-                maintain a creative perspective in my technical work.
-            </p>
-            <div class="hobbies-gallery">
-                <div class="hobby-item">
-                    <img src="assets/img/che.jpg" alt="Portrait Sketch" class="hobby-img">
+            <div class="section-heading section-heading-left">
+                <p class="section-eyebrow">Creative Pursuits</p>
+                <h2 class="section-title">Art & Sketches</h2>
+                <p class="section-summary">
+                    When I'm not coding, I enjoy exploring new technologies, reading books,
+                    and contributing to open-source projects. Drawing and sketching help me
+                    maintain a creative perspective in my technical work.
+                </p>
+            </div>
+            <div class="hobbies-gallery masonry-grid">
+                <div class="hobby-item" data-index="0">
+                    <img src="assets/img/che.jpg" alt="Revolutionary portrait sketch in charcoal" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Portrait Sketch</h3>
-                        <p class="hobby-desc">Charcoal on paper</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Revolutionary Portrait</h3>
+                            <p class="hobby-desc">Charcoal on paper</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="hobby-item">
-                    <img src="assets/img/night.jpg" alt="Landscape Drawing" class="hobby-img">
+                <div class="hobby-item" data-index="1">
+                    <img src="assets/img/night.jpg" alt="Night landscape drawing with pencil" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Landscape Drawing</h3>
-                        <p class="hobby-desc">Pencil sketch</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Night Landscape</h3>
+                            <p class="hobby-desc">Pencil sketch</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="hobby-item">
-                    <img src="assets/img/merylin.jpg" alt="Abstract Art" class="hobby-img">
+                <div class="hobby-item" data-index="2">
+                    <img src="assets/img/merylin.jpg" alt="Marilyn Monroe portrait in mixed media" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Abstract Art</h3>
-                        <p class="hobby-desc">Mixed media</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Icon Portrait</h3>
+                            <p class="hobby-desc">Mixed media</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="hobby-item">
-                    <img src="assets/img/moheen.jpg" alt="Technical Drawing" class="hobby-img">
+                <div class="hobby-item" data-index="3">
+                    <img src="assets/img/moheen.jpg" alt="Character portrait in ink" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Technical Drawing</h3>
-                        <p class="hobby-desc">Ink on paper</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Character Study</h3>
+                            <p class="hobby-desc">Ink on paper</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="hobby-item">
-                    <img src="assets/img/devsisu.jpg" alt="Character Design" class="hobby-img">
+                <div class="hobby-item" data-index="4">
+                    <img src="assets/img/devsisu.jpg" alt="Traditional character design" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Character Design</h3>
-                        <p class="hobby-desc">Digital art</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Traditional Art</h3>
+                            <p class="hobby-desc">Pencil & ink</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
 
-                <div class="hobby-item">
-                    <img src="assets/img/cheplin.jpg" alt="Nature Sketch" class="hobby-img">
+                <div class="hobby-item" data-index="5">
+                    <img src="assets/img/cheplin.jpg" alt="Classic portrait sketch" class="hobby-img" loading="lazy">
                     <div class="hobby-overlay">
-                        <h3 class="hobby-title">Nature Sketch</h3>
-                        <p class="hobby-desc">Watercolor and ink</p>
+                        <div class="hobby-meta">
+                            <h3 class="hobby-title">Classic Portrait</h3>
+                            <p class="hobby-desc">Charcoal sketch</p>
+                        </div>
+                        <button class="hobby-zoom" aria-label="View full image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Lightbox Modal -->
+        <!-- Enhanced Lightbox Modal -->
         <div class="lightbox" id="lightbox">
             <div class="lightbox-content">
-                <span class="lightbox-close" id="lightbox-close">&times;</span>
+                <span class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</span>
+                <div class="lightbox-counter" id="lightbox-counter"></div>
                 <img src="" alt="" class="lightbox-img" id="lightbox-img">
                 <div class="lightbox-caption" id="lightbox-caption"></div>
                 <div class="lightbox-nav">
-                    <div class="lightbox-button" id="lightbox-prev"><i class="fas fa-chevron-left"></i></div>
-                    <div class="lightbox-button" id="lightbox-next"><i class="fas fa-chevron-right"></i></div>
+                    <button class="lightbox-button" id="lightbox-prev" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="lightbox-button" id="lightbox-next" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>

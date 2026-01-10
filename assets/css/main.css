@@ -1161,10 +1161,10 @@ h1, h2, h3, h4 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 20px;
     color: white;
     opacity: 0;
@@ -1175,18 +1175,55 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
+.hobby-meta {
+    margin-top: auto;
+}
+
 .hobby-title {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
     transform: translateY(20px);
     transition: transform 0.3s ease;
 }
 
 .hobby-desc {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.9;
+    color: #e0e0e0;
     transform: translateY(20px);
     transition: transform 0.3s ease 0.1s;
+    margin: 0;
+}
+
+.hobby-zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-item:hover .hobby-zoom {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hobby-zoom:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .hobby-item:hover .hobby-title,
@@ -1226,7 +1263,32 @@ h1, h2, h3, h4 {
     max-height: 90vh;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-    animation: zoomIn 0.3s ease;
+    animation: fadeInScale 0.4s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.lightbox-counter {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .lightbox-caption {
@@ -1234,6 +1296,7 @@ h1, h2, h3, h4 {
     text-align: center;
     margin-top: 1rem;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .lightbox-close {
@@ -1245,10 +1308,18 @@ h1, h2, h3, h4 {
     cursor: pointer;
     transition: var(--transition);
     z-index: 1001;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lightbox-close:hover {
     color: var(--accent-color);
+    transform: rotate(90deg);
 }
 
 .lightbox-nav {
@@ -1262,21 +1333,29 @@ h1, h2, h3, h4 {
 }
 
 .lightbox-button {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     color: white;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     font-size: 1.5rem;
 }
 
 .lightbox-button:hover {
     background: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.lightbox-button:active {
+    transform: scale(0.95);
 }
 
 /* ===== FOOTER ===== */
@@ -1649,5 +1728,24 @@ h1, h2, h3, h4 {
 
     .skill-suite {
         padding: 1.1rem;
+    }
+
+    .hobbies-gallery {
+        column-count: 1;
+    }
+
+    .lightbox-nav {
+        padding: 0 10px;
+    }
+
+    .lightbox-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .lightbox-counter {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.6rem;
     }
 }
